@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 class Manipulator_2D(object):
     def __init__(self):
-        self.model_path = "./model/manipulator.xml"
+        self.model_path = "model/manipulator.xml"
         self.visual = True
         self.model = mujoco.MjModel.from_xml_path(self.model_path)
         self.data = mujoco.MjData(self.model)

@@ -6,7 +6,7 @@ def fun(paramt):
     return 100*(x2-x1**2)**2 + (1-x1)**2
 
 
-x0 = [1, 2]
+x0 = [-1, 20]
 #res = optimize.minimize(fun,x0)
 res = opt.minimize(fun,x0,method='BFGS')
 
